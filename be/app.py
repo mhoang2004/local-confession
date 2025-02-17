@@ -117,7 +117,7 @@ async def get_posts(request: ConfessionRequest):
     post_count = 0
     with open(f"data/{page}.csv", mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerow(["Text", "URL", "Likes", "Comments", "Shares"])  # Write CSV header
+        writer.writerow(["Text", "URL", "Likes", "Comments", "Shares", "Time"])  # Write CSV header
         for item in apify_client.dataset(run["defaultDatasetId"]).iterate_items():
             post_text = item.get("text", "No text")
             if post_pattern.match(post_text):
@@ -126,7 +126,8 @@ async def get_posts(request: ConfessionRequest):
                     item.get("url"),
                     item.get("likes", 0),
                     item.get("comments", 0),
-                    item.get("shares", 0)
+                    item.get("shares", 0),
+                    item.get("time", None)
                 ])
                 post_count += 1
 
