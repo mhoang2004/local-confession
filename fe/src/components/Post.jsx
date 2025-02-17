@@ -1,4 +1,5 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 import { useState } from "react";
 
 const Post = ({ post }) => {
@@ -27,7 +28,7 @@ const Post = ({ post }) => {
       <div className="text-gray-700 mt-5">
         <button
           type="button"
-          class="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
+          className="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
         >
           <img src="/like.svg" alt="Logo" className="w-4 h-4 mr-1" />
           {post.likes}
@@ -35,7 +36,7 @@ const Post = ({ post }) => {
 
         <button
           type="button"
-          class="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
+          className="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
         >
           <img src="/comment.svg" alt="Logo" className="w-4 h-4 mr-1" />
           {post.comments}
@@ -43,7 +44,7 @@ const Post = ({ post }) => {
 
         <button
           type="button"
-          class="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
+          className="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
         >
           <img src="/share.svg" alt="Logo" className="w-4 h-4 mr-1" />
           {post.shares}
@@ -55,7 +56,9 @@ const Post = ({ post }) => {
       </div>
 
       <div className="text-gray-800 my-2">
-        <strong>Summary:</strong> {post.summary} {/* Display summary */}
+        <strong>Summary:</strong>
+
+        <ReactMarkdown>{post.summary}</ReactMarkdown>
       </div>
 
       <div className="text-center">
