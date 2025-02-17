@@ -98,7 +98,7 @@ function App() {
   return (
     <div className="flex justify-center h-screen bg-gray-100 p-5">
       <div>
-        <h2 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white">
+        <h2 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl">
           Summarize Confessions.
         </h2>
 
@@ -173,12 +173,12 @@ function App() {
             <button
               disabled
               type="button"
-              className="py-2.5 px-5 me-2 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center"
+              className="py-2.5 px-5 me-2 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
             >
               <svg
                 aria-hidden="true"
                 role="status"
-                className="inline w-4 h-4 me-3 text-gray-200 animate-spin dark:text-gray-600"
+                className="inline w-4 h-4 me-3 text-gray-200 animate-spin"
                 viewBox="0 0 100 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -202,12 +202,12 @@ function App() {
             <button
               disabled
               type="button"
-              className="py-2.5 px-5 me-2 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center"
+              className="py-2.5 px-5 me-2 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
             >
               <svg
                 aria-hidden="true"
                 role="status"
-                className="inline w-4 h-4 me-3 text-gray-200 animate-spin dark:text-gray-600"
+                className="inline w-4 h-4 me-3 text-gray-200 animate-spin"
                 viewBox="0 0 100 101"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

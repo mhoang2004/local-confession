@@ -28,7 +28,7 @@ const Post = ({ post }) => {
       <div className="text-gray-700 mt-5">
         <button
           type="button"
-          className="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
+          className="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center"
         >
           <img src="/like.svg" alt="Logo" className="w-4 h-4 mr-1" />
           {post.likes}
@@ -36,7 +36,7 @@ const Post = ({ post }) => {
 
         <button
           type="button"
-          className="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
+          className="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center"
         >
           <img src="/comment.svg" alt="Logo" className="w-4 h-4 mr-1" />
           {post.comments}
@@ -44,7 +44,7 @@ const Post = ({ post }) => {
 
         <button
           type="button"
-          className="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700"
+          className="text-gray-900 bg-white mr-2 hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center"
         >
           <img src="/share.svg" alt="Logo" className="w-4 h-4 mr-1" />
           {post.shares}
@@ -65,7 +65,7 @@ const Post = ({ post }) => {
         <a href={post.url} target="_blank">
           <button
             type="button"
-            class="text-white cursor-pointer bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-4 py-2 text-center"
+            class="text-white cursor-pointer bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 focus:ring-green-800 font-medium rounded-lg text-sm px-4 py-2 text-center"
           >
             URL
           </button>
